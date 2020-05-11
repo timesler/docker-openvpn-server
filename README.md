@@ -18,3 +18,7 @@
   ```bash
   docker exec openvpn-server bash create_user_profile.sh tim
   ```
+1. Logout, then copy profile to user machine:
+  ```bash
+  scp ec2-user@<server name>:~/docker-openvpn-server/client-profiles/tim.ovpn .
+  ```
