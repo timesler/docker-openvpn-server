@@ -11,6 +11,7 @@
 1. Logout and back in.
 1. Start OpenVPN server:
   ```bash
+  cd docker-openvpn-server
   bash start-aws.sh <public IP>
   ```
 1. Create user profiles:
