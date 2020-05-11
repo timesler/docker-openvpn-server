@@ -38,8 +38,3 @@ RUN echo "easyrsa build-client-full \$1 nopass" > create_user_profile.sh; \
     chmod +x create_user_profile.sh
 
 CMD ["ovpn_run"]
-
-# docker build --build-arg "HOST=127.0.0.1" . -t openvpn-server:latest
-# docker run --name openvpn-server --restart=always -d -p 1194:1194/udp -v $PWD/client-profiles:/client-profiles --cap-add=NET_ADMIN openvpn-server
-
-# docker exec openvpn-server bash create_user_profile.sh tim
